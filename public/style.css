@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styles */
+header h1 a {
+    color: #333;
+}
+
+header h1 a:hover {
+    color: red;
+}
+
+/* Hyperlink Styles */
+p a {
+    color: #333;
+}
+
+p a:hover {
+    color: red;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+hr {
+    color:#333;
+}
+
+/* Responsive multi-column navigation */
+@media (min-width: 600px) {
+    nav ul {
+        column-count: 3; /* 3 columns on medium screens */
+        column-gap: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    nav ul {
+        column-count: 6; /* 6 columns on large screens */
+        column-gap: 60px;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Footer Styles */
+footer p {
+    font-size: 0.8em;
+}
+
+/* Make the website more readable on small screens */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack items vertically on small screens */
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.8em; /* Even smaller font for small screens */
+    }
+}
+
+/* max-width for large screens */
+@media (min-width: 1000px) {
+    section {
+        max-width: 960px;
+        margin: 0 auto; /* Center content */
+    }
+}
+
+/* max-width for medium screens */
+@media (min-width: 600px) and (max-width: 999px) {
+    section {
+        max-width: 600px;
+        margin: 0 auto; /* Center content */
+    }
+}
